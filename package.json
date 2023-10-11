@@ -1,15 +1,19 @@
 {
   "name": "tim-berners-lee",
+  "homepage": "https://alexander-fejari.github.io/tim-berners-lee/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "deploy" : "gh-pages -d dist",
     "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^4.4.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gh-pages": "^6.0.0"
+  }
 }
