@@ -4,8 +4,11 @@
 :root {
     --primary: #071C2E;
     --secondary: #FED7AA;
+    --tertiary: #0C365E;
     --red: #963100;
     --link: #7EA4C9;
+    --link-breadcrump: #525252;
+    --gray: #9F9F9F;
     --text: #1A1A1A;
     --font-serif: 'Georgia', serif;
     --font-sans-serif: 'Segoe UI', sans-serif;
@@ -47,7 +50,6 @@ header a img {
     max-width: 128px;
 }
 
-/* classes */
 
 .mobile-icon {
     width: fit-content;
@@ -97,10 +99,117 @@ header a img {
     background-color: var(--red);
     font-size: 0.75rem;
     font-weight: 700;
-    text-align: center;
     color: white;
     border-radius: 8px;
-    width: 100%;
-    padding: 0.3rem 0;
+    width: fit-content;
+    padding: 0.5rem 0.4rem;
 }
 
+main {
+    width: 100%;
+    height: 100%;
+    margin-top: 6.625rem;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.25rem;
+}
+
+.breadcrumb ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.breadcrumb ul li::after {
+    content: ">";
+    font-size: 0.75rem;
+    padding: 0 0.5rem;
+}
+
+.breadcrumb ul li:last-child::after {
+    content: "";
+}
+
+.breadcrumb ul li a {
+    font-size: 0.75rem;
+    color: var(--link-breadcrump);
+}
+
+.hero-banner {
+    margin-top: 1.5rem;
+    padding-left: 1.375rem;
+    padding-right: 1.375rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-banner-info {
+    margin-top: 0.75rem;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+.badge {
+    white-space: nowrap;
+    max-width: fit-content;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-align: center;
+    background-color: var(--secondary);
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+.tim-info-container {
+    width: 75%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.tim-name {
+    font-size: 1.5rem;
+    font-family: var(--font-serif);
+}
+
+.tim-profession {
+    font-size: 1rem;
+    font-family: var(--font-serif);
+}
+.tim-alias {
+    color: var(--gray);
+    font-size: 0.75rem;
+    font-family: var(--font-serif);
+}
+
+.tim-info-cta {
+    width: 25%;
+    height: fit-content;
+    border: 1px solid var(--tertiary);
+    border-radius: 8px;
+    color: var(--tertiary);
+}
+
+.btn-action {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-banner-source{
+    margin-top: 1.125rem;
+    font-size: 0.75rem;
+
+}
