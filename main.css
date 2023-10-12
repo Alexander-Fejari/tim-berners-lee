@@ -23,9 +23,10 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    padding: 0.8rem;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 5.625rem;
     background-color: var(--primary);
@@ -36,30 +37,28 @@ header i {
 }
 
 header img {
-    flex: 1;
+    flex: 2;
 }
 
+
 header a img {
-    margin-right: 1rem;
-    margin-left: 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    max-width: 128px;
 }
 
 /* classes */
 
 .mobile-icon {
-    margin-left: 1rem;
-}
-
-.logo-img {
-    max-width: 132px;
+    width: fit-content;
 }
 
 .btn {
     border: none;
     background-color: transparent;
     outline: none;
-    max-height: 64px;
-    max-width: 64px;
+    max-height: 65px;
+    max-width: 65px;
     min-height: 24px;
     min-width: 24px;
 }
@@ -68,26 +67,40 @@ header a img {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 1.5rem;
+}
+
+.logo-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 0.5rem;
 }
 
 .cta-user {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
-    margin-right: 1rem;
+    width: 11.625rem;
 }
 
 .btn-user {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
-    margin-right: 0.5rem;
 }
 
 .btn-subscribe {
     background-color: var(--red);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: center;
     color: white;
     border-radius: 8px;
     width: 100%;
+    padding: 0.3rem 0;
 }
 
